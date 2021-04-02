@@ -1,4 +1,4 @@
-package strig_test
+package string_test
 
 import (
 	"testing"
@@ -26,4 +26,11 @@ func TestString(t *testing.T) {
 	t.Log("rune size: ", unsafe.Sizeof(c[0])) // rune size:  4
 	t.Logf("中 unicode %x", c[0]) // 中 unicode 4e2d
 	t.Logf("中 UTF8 %x", s) // 中 UTF8 e4b8ad
+}
+
+func TestStringToRune(t *testing.T) {
+	s := "我究竟想要找一个什么样的工作？"
+	for _, c := range s {
+		t.Logf("%[1]c %[1]d", c)
+	}
 }
