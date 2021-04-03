@@ -1,4 +1,4 @@
-package fn_test
+package go_learning
 
 import (
 	"fmt"

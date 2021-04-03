@@ -1,11 +1,11 @@
-package map_ext
+package go_learning
 
 import (
 	"fmt"
 	"testing"
 )
 
-func Test(t *testing.T) {
+func TestMap(t *testing.T) {
 	m := map[int]func(op int)int {}
 	// Lambda 定义，形参可以省略
 	// m := map[int]func(int)int {}

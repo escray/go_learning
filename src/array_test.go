@@ -1,4 +1,4 @@
-package array_test
+package go_learning
 
 import "testing"
 

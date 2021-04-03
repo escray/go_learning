@@ -1,11 +1,11 @@
-package string_test
+package go_learning
 
 import (
 	"testing"
 	"unsafe"
 )
 
-func TestString(t *testing.T) {
+func TestStringAgain(t *testing.T) {
 	var s string
 	// 初始化默认为零值 ""
 	t.Log(s)

@@ -1,4 +1,4 @@
-package fib
+package go_learning
 
 import (
 	"fmt"

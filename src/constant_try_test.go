@@ -1,4 +1,4 @@
-package constant_test
+package go_learning
 
 import (
 	"testing"

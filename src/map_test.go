@@ -1,4 +1,4 @@
-package my_map
+package go_learning
 
 import (
 	"sort"

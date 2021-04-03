@@ -1,12 +1,12 @@
-package operator_test
+package go_learning
 
 import "testing"
 
-const (
-	Readable = 1 << iota
-	Writable
-	Executable
-)
+// const (
+// 	Readable = 1 << iota
+// 	Writable
+// 	Executable
+// )
 
 
 func TestCompareArray(t *testing.T) {

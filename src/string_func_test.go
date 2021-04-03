@@ -1,4 +1,4 @@
-package string_test
+package go_learning
 
 import (
 	"reflect"
