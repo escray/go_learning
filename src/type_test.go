@@ -12,12 +12,10 @@ type MyInt int64
 
 func TestImplicit(t *testing.T){
 	var a int32 = 1
-	var b int64
-	b = int64(a)
+	var b int64 = int64(a)
 	t.Log(a, b)
 
-	var c MyInt
-	c = MyInt(b)
+	var c MyInt = MyInt(b)
 	t.Log(a, b, c)
 }
 

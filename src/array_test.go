@@ -100,7 +100,7 @@ func TestSliceCamparing(t *testing.T) {
 
 func TestSliceCompare(t *testing.T) {
 	var a []int
-	var b = make([]int, 0, 0)
+	var b = make([]int, 0)
 	c := []int{}
 	t.Log(a, len(a), cap(a))
 	t.Log(b, len(b), cap(b))

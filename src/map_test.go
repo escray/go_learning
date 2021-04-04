@@ -39,7 +39,7 @@ func TestTravelMap(t *testing.T) {
 func TestSortByKey(t *testing.T) {
 	m1 := map[string]int{"aa": 1, "zz": 2, "bb": 3, "yy": 4, "cc": 5, "xx": 6}
 	s1 := make([]string, 0, len(m1))
-	for k, _ := range m1 {
+	for k := range m1 {
 		s1 = append(s1, k)
 	}
 	sort.Strings(s1)

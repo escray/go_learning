@@ -17,7 +17,7 @@ func TestWhileLoop(t *testing.T) {
 }
 
 func TestMultiSec(t *testing.T) {
-	if a := 1 == 1; a {
+	if a := (1 == 1); a {
 		t.Log("1==1")
 	}
 }
