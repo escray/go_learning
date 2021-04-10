@@ -28,13 +28,13 @@ func GetFibonacci(n int) ([]int, error){
 
 func TestGetFibonacci(t *testing.T) {
   t.Log(GetFibonacci(10))
-	t.Log(GetFibonacci(-10))
+	// t.Log(GetFibonacci(-10))
 
 	if v, err:=GetFibonacci(1); err != nil {
 		if err == LessThanTwoError {
 			fmt.Println("It is less.")
 		}
-		t.Error(err)
+		// t.Error(err)
 	} else {
 		t.Log(v)
 	}

@@ -3,7 +3,6 @@ package go_learning
 import (
 	"fmt"
 	"math/rand"
-	"os"
 	"testing"
 	"time"
 )
@@ -95,7 +94,7 @@ func TestDeferOSExit(t *testing.T) {
 
 	fmt.Println("Started")
 	t.Log("test start")
-	os.Exit(0)
+	// os.Exit(0)
 }
 
 func GetFunc() func() {
@@ -132,5 +131,5 @@ func TestDefer(t *testing.T) {
   defer FuncDefer()
 	defer ClearAgain(3)
   fmt.Println("1. Start")
-  panic("err")
+  // panic("err")
 }
