@@ -87,8 +87,10 @@ func (agt *Agent) startCollectors() error {
 	var err error
 	var errs CollectorsError
 	var mutex sync.Mutex
+	// var wg sync.WaitGroup
 
 	for name, collector := range agt.collectors {
+		// wg.Add(1)
 		go func(name string, collector Collector, ctx context.Context) {
 			defer func() {
 				mutex.Unlock()
@@ -99,8 +101,10 @@ func (agt *Agent) startCollectors() error {
 				errs.CollectorErrors = append(errs.CollectorErrors,
 					errors.New(name+":"+err.Error()))
 			}
+			// wg.Done()
 		}(name, collector, agt.ctx)
 	}
+	// wg.Wait()
 	if len(errs.CollectorErrors) == 0 {
 		return nil
 	}

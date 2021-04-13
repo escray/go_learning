@@ -1,7 +1,7 @@
-package go_learning
+// package go_learning
 
-import "fmt"
+// import "fmt"
 
-func main() {
-	fmt.Println("hello World")
-}
+// func main() {
+// 	fmt.Println("hello World")
+// }
