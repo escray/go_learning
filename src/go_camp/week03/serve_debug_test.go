@@ -44,14 +44,22 @@ func serve(addr string, handler http.Handler, stop <- chan struct{}) error {
 	return s.ListenAndServe()
 }
 
+func serveDebugChan(stop chan struct{}) error {
+	return nil
+}
+
+func serveAppChan(stop chan struct{}) error {
+	return nil
+}
+
 func TestServeApp(t *testing.T) {
 	done := make(chan error, 2)
 	stop := make(chan struct {})
 	go func() {
-		done <- serveDebug(stop)
+		done <- serveDebugChan(stop)
 	}()
 	go func() {
-		done <- serveApp(stop)
+		done <- serveAppChan(stop)
 	}()
 
 	var stopped bool
